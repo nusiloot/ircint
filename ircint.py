@@ -13,6 +13,7 @@ import sqlite3
 import sys
 import datetime
 import re
+import hashlib
 #import requests
 
 from jaraco.stream import buffer
@@ -48,7 +49,7 @@ def log(event):
     nick = source.nick
     channel = event.target
     message = event.arguments[0]
-    hash = ""
+    hash = hashlib.md5(bytes(message, enc)).hexdigest()
     print(msgtype, timestamp, source, nick, channel, message, hash)
     cur.execute("""INSERT INTO messages(id, msgtype, timestamp, source, nick, channel, message, hash) VALUES (?,?,?,?,?,?,?,?);""", (uniqid, msgtype, timestamp, source, nick, channel, message, hash))
     for link in get_links(message):
