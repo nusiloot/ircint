@@ -1,11 +1,19 @@
 #IRCINT 
 ##A tool for IRC Intelligence and logging
 
+> so far it will only put all messages and links into the database
+>
+> the database is searchable with sql
 Usage:
+
 1. Create a database
+
 2. Edit the settings.py with your settings
+
 3. run 'python ircint.py'
+
 4. ???
+
 5. Profit!
 
 The ircint.db database will contain all messages from the specified channels,
