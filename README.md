@@ -4,6 +4,7 @@
 > so far it will only put all messages and links into the database
 >
 > the database is searchable with sql
+
 Usage:
 
 1. Create a database
