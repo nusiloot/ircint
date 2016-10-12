@@ -7,13 +7,16 @@ appname = "ircint"
 
 database = "ircint.db"
 
-#server = "irc.malwaretech.com"
-server = "irc.hackint.org"
+server = "irc.malwaretech.com"
+#server = "irc.hackint.org"
 port   = 6667
 
-nick   = "testtest"
-channellist = ["#testering"]
-#channellist = ["#MalwareTech"]
+connectionlist = {"irc.malwaretech.com":[6667,["#MalwareTech"]]}
+
+
+nick   = "randomdood1337"
+#channellist = ["#testering"]
+channellist = ["#MalwareTech"]
 
 def main():
     print("This file shouldn't be run directly. It contains the settings for %s" %  appname)
