@@ -22,6 +22,17 @@ privmessages, and will filter out all links (starting with http or https) from
 the irc into a seperate table
 
 
+*Update 12.10.2016*
+> * wrapped base functionality in classes
+>
+> * Added Threading
+>
+> * Edited settings syntax to support multiple server connections
+>
+> TODO: Inferface and searching the db
+
+
+
 
 
 
